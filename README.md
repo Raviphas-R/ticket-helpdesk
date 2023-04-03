@@ -20,11 +20,9 @@ MEAN is a set of Open Source components that together, provide an end-to-end fra
 git clone https://github.com/Raviphas-R/ticket-helpdesk.git
 cd ticket-helpdesk
 npm install
-[comment]: <> (For connect to server on MongoDB)
+[//]: # (This for start sever)
 npm start:server
-[comment]: <> (For start application)
 npm start
-[comment]: <> (To import test data to server)
 npm run import_data
 
 ```
