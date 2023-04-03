@@ -7,22 +7,41 @@ MEAN is a set of Open Source components that together, provide an end-to-end fra
 - **A**ngular (formerly Angular.js): Front-end web app framework; runs your JavaScript code in the user's browser, allowing your application UI to be dynamic
 - **N**ode.js : JavaScript runtime environment – lets you implement your application back-end in JavaScript
 
-### Pre-requisites
+## Pre-requisites
 
 - git - [Installation guide](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/) .
 - node.js - [Download page](https://nodejs.org/en/download/) .
 - npm - comes with node or download yarn - [Download page](https://yarnpkg.com/lang/en/docs/install) .
 - mongodb - [Download page](https://www.mongodb.com/download-center/community) .
 
-### Installation
+## Getting Started
 
 ```
-git clone https://github.com/Raviphas-R/ticket-helpdesk.git
+Clone or Download the zip file of this repository.
 cd ticket-helpdesk
 npm install
-[//]: # (This for start sever)
-npm start:server
-npm start
-npm run import_data
+npm run dev
+```
 
+###OR
+In fisrt Terminal in code editer
+
+```
+npm run server
+```
+
+In Second Terminal in code editer
+
+```
+npm start
+```
+
+connect your mongoDB to local server to mongodb://localhost:27017.
+
+Then Go to http://localhost:4200/ to see application
+
+## To import Test Data to server
+
+```
+npm run import_data
 ```

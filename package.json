@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:server": "nodemon ./backend/server.js",
+    "server": "nodemon ./backend/server.js",
+    "dev": "concurrently \"start npm run server\" \"start ng serve\"",
     "import_data": "node .backend/data/import-data.js --import",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
