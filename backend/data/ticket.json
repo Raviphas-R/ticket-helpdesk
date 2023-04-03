@@ -1,0 +1,132 @@
+[
+  {
+    "_id": "6429a1b5848036297729ed1b",
+    "title": "Test ticket 13",
+    "description": "This is new data",
+    "contactInfo": "084-654-4587",
+    "createAt": "2023-04-02T07:12:10.549Z",
+    "status": "Resolved",
+    "slug": "test-ticket-13",
+    "updateAt": "2023-04-02T15:39:47.645Z"
+  },
+  {
+    "_id": "6429a14c848036297729ed14",
+    "title": "Test ticket 12",
+    "description": "insert new data",
+    "contactInfo": "087-657-1234",
+    "createAt": "2023-04-02T07:12:10.549Z",
+    "status": "Resolved",
+    "slug": "test-ticket-12",
+    "updateAt": "2023-04-02T15:38:33.516Z"
+  },
+  {
+    "_id": "64282445edfe36070013f0f9",
+    "title": "First ticket 11",
+    "description": "This ticket test data",
+    "contactInfo": "086-157-15467",
+    "createAt": "2022-10-15T10:30:00.000Z",
+    "updateAt": "2022-11-09T00:10:00.000Z",
+    "status": "Accepted",
+    "slug": "first-ticket-4"
+  },
+  {
+    "_id": "64269722d42e8af6577ce176",
+    "title": "First ticket 10",
+    "description": "This ticket test data",
+    "contactInfo": "081-777-7777",
+    "createAt": "2022-10-15T10:00:00.000Z",
+    "updateAt": "2023-04-02T02:58:17.762Z",
+    "status": "Accepted",
+    "slug": "first-ticket-4"
+  },
+  {
+    "_id": "642650910b616d6723e54dc8",
+    "title": "First ticket 9",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-09-05T04:34:00.000Z",
+    "updateAt": "2023-04-02T15:31:24.329Z",
+    "status": "Resolved",
+    "slug": "first-ticket-4"
+  },
+  {
+    "_id": "6426549c3f92e41f327dceea",
+    "title": "First ticket 8",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-08-05T07:10:22.000Z",
+    "status": "Accepted",
+    "slug": "first-ticket-3",
+    "updateAt": "2023-04-02T16:56:43.622Z"
+  },
+  {
+    "_id": "642650910b616d6723e54dc5",
+    "title": "First ticket 7",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-07-05T00:02:10.000Z",
+    "updateAt": "2022-03-09T00:34:22.000Z",
+    "status": "Pending",
+    "slug": "first-ticket"
+  },
+  {
+    "_id": "642650910b616d6723e54dcb",
+    "title": "First ticket 6",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-06-03T15:15:50.000Z",
+    "updateAt": "2022-04-09T03:25:37.000Z",
+    "status": "Resolved",
+    "slug": "first-ticket-7"
+  },
+  {
+    "_id": "642650910b616d6723e54dcc",
+    "title": "First ticket 5",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-05-05T13:21:00.000Z",
+    "updateAt": "2023-04-02T15:47:47.743Z",
+    "status": "Rejected",
+    "slug": "first-ticket-4"
+  },
+  {
+    "_id": "642650910b616d6723e54dc7",
+    "title": "First ticket 4",
+    "description": "This ticket test dataasdfasdfj",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-03-05T00:08:30.000Z",
+    "updateAt": "2022-07-09T02:42:47.000Z",
+    "status": "Pending",
+    "slug": "first-ticket-3"
+  },
+  {
+    "_id": "642650910b616d6723e54dca",
+    "title": "First ticket 3",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-01-15T14:27:00.000Z",
+    "updateAt": "2022-09-09T16:00:00.000Z",
+    "status": "Rejected",
+    "slug": "first-ticket-6"
+  },
+  {
+    "_id": "642650910b616d6723e54dc9",
+    "title": "First ticket 2",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-01-05T09:50:10.000Z",
+    "updateAt": "2022-09-09T08:20:00.000Z",
+    "status": "Pending",
+    "slug": "first-ticket-5"
+  },
+  {
+    "_id": "642650910b616d6723e54dc6",
+    "title": "First ticket 1",
+    "description": "This ticket test data",
+    "contactInfo": "08-123-4567",
+    "createAt": "2022-01-05T03:20:30.000Z",
+    "updateAt": "2023-04-02T15:30:44.761Z",
+    "status": "Rejected",
+    "slug": "first-ticket-2"
+  }
+]

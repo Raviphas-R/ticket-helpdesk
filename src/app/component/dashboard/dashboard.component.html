@@ -1,0 +1,144 @@
+<div class="container margin-top-32">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="margin-bottom-16">Dashboard</h2>
+      <div class="row container__status-filter-input align-items-center">
+        <div class="col-sm-6">
+          <div class="form-group row align-items-center">
+            <label
+              for="status-filter"
+              class="col-sm-2 dashboard__status-filter__label"
+              >Status filter:</label
+            >
+            <div class="col-sm-3">
+              <select
+                id="status-filter"
+                class="form-select form-select-sm dashboard__status-filter__select"
+                [(ngModel)]="selectedStatus"
+                (change)="filterTickets(selectedStatus)"
+              >
+                <option value="Pending">Pending</option>
+                <option value="Resolved">Resolved</option>
+                <option value="Rejected">Rejected</option>
+                <option value="Accepted">Accepted</option>
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <button
+                class="btn btn-outline-secondary btn-sm"
+                (click)="clearFilter()"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-end">
+          <button
+            class="btn btn-primary btn__add-ticket"
+            (click)="openCreateTicketDialog()"
+          >
+            ADD TICKET
+          </button>
+        </div>
+      </div>
+      <div class="dashboard__table-container">
+        <table class="table table-hover table-fixed">
+          <thead class="thead-light sticky-top">
+            <tr class="text-center">
+              <th class="w-10"></th>
+              <th class="w-20">Title</th>
+              <th class="w-40">Description</th>
+              <th class="w-10">Contact</th>
+              <th class="w-5">
+                Created
+                <i
+                  class="bi bi-sort-down-alt"
+                  (click)="sortTickets('createAt', $event)"
+                  #sorted
+                >
+                </i>
+              </th>
+              <th class="w-5">
+                Updated
+                <i
+                  class="bi bi-sort-down-alt"
+                  (click)="sortTickets('updateAt', $event)"
+                  #sorted
+                ></i>
+              </th>
+              <th class="w-5">
+                Status
+                <i
+                  class="bi bi-sort-down-alt"
+                  (click)="sortTickets('status', $event)"
+                  #sorted
+                ></i>
+              </th>
+              <th class="w-5"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let ticket of filteredData; let i = index"
+              class="text-center"
+            >
+              <td class="text-nowrap">{{ i + 1 }}</td>
+              <td class="text-nowrap">{{ ticket.title }}</td>
+              <td class="text-nowrap">{{ ticket.description }}</td>
+              <td class="text-nowrap">{{ ticket.contactInfo }}</td>
+              <td class="text-nowrap">
+                {{ ticket.createAt | date : "dd/MM/yy 'at' HH:mm:ss" }}
+              </td>
+              <td class="text-nowrap">
+                {{ ticket.updateAt | date : "dd/MM/yy 'at' HH:mm:ss" }}
+              </td>
+              <td>
+                <span
+                  class="badge"
+                  [class.status-pending]="ticket.status === 'Pending'"
+                  [class.status-resolved]="ticket.status === 'Resolved'"
+                  [class.status-rejected]="ticket.status === 'Rejected'"
+                  [class.status-accepted]="ticket.status === 'Accepted'"
+                >
+                  {{ ticket.status }}
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn btn-primary btn-sm"
+                  (click)="openEditTicketDialog(ticket)"
+                  aria-label="Edit"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <nav>
+          <ul class="pagination">
+            <li class="page-item" [ngClass]="{ disabled: currentPage === 1 }">
+              <a class="page-link" href="#" (click)="loadData(currentPage - 1)"
+                >Previous</a
+              >
+            </li>
+            <li
+              class="page-item"
+              [ngClass]="{ active: i === currentPage }"
+              *ngFor="let i of pages"
+            >
+              <a class="page-link" (click)="loadData(i)">{{ i }}</a>
+            </li>
+            <li
+              class="page-item"
+              [ngClass]="{ disabled: currentPage === totalPages }"
+            >
+              <a class="page-link" (click)="loadData(currentPage + 1)">Next</a>
+            </li>
+          </ul>
+        </nav> -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+.modal-title {
+  color: #7d63f1;
+}
+
+.invalid-feedback {
+  margin-top: 0px;
+  margin-left: 4px;
+}
+
+form label {
+  color: black;
+}
+
+select.form-select {
+  width: 120px;
+}
+
+select.form-select option[value="Pending"] {
+  color: #ffbf00;
+}
+
+select.form-select option[value="Resolved"] {
+  color: #28a745;
+}
+
+select.form-select option[value="Rejected"] {
+  color: red;
+}
+
+select.form-select option[value="Accepted"] {
+  color: #17a2b8;
+}
+
+.text--yellow {
+  color: #ffbf00;
+}
+
+.text--green {
+  color: green;
+}
+
+.text--red {
+  color: red;
+}
+
+.text--blue {
+  color: #17a2b8;
+}

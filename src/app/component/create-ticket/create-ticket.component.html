@@ -1,0 +1,123 @@
+<h1 class="modal-title mt-3 ms-3">ADD TICKET</h1>
+<mat-dialog-content>
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="modal-body">
+      <div class="mb-1">
+        <label for="title" class="form-label">Title:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          placeholder="Title"
+          name="title"
+          required
+          ngModel
+        />
+        <div
+          class="invalid-feedback d-block"
+          *ngIf="
+            myForm.controls['title']?.invalid &&
+            myForm.controls['title']?.touched
+          "
+        >
+          Title is required.
+        </div>
+        <div
+          class="placeholder"
+          [hidden]="
+            myForm.controls['title']?.invalid &&
+            myForm.controls['title']?.touched
+          "
+        ></div>
+      </div>
+      <div class="mb-1">
+        <label for="description" class="form-label">Description:</label>
+        <textarea
+          class="form-control"
+          id="description"
+          placeholder="Description"
+          name="description"
+          required
+          ngModel
+        ></textarea>
+        <div
+          class="invalid-feedback d-block"
+          *ngIf="
+            myForm.controls['description']?.invalid &&
+            myForm.controls['description']?.touched
+          "
+        >
+          Description is required.
+        </div>
+        <div
+          class="placeholder"
+          [hidden]="
+            myForm.controls['description']?.invalid &&
+            myForm.controls['description']?.touched
+          "
+        ></div>
+      </div>
+      <div class="mb-1">
+        <label for="contactInfo" class="form-label">Contact Information:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="contactInfo"
+          placeholder="Contact"
+          name="contactInfo"
+          required
+          ngModel
+        />
+        <div
+          class="invalid-feedback d-block"
+          *ngIf="
+            myForm.controls['contactInfo']?.invalid &&
+            myForm.controls['contactInfo']?.touched
+          "
+        >
+          Contact is required.
+        </div>
+        <div
+          class="placeholder"
+          [hidden]="
+            myForm.controls['contactInfo']?.invalid &&
+            myForm.controls['contactInfo']?.touched
+          "
+        ></div>
+      </div>
+      <div class="mb-3">
+        <label for="status" class="form-label">Status:</label>
+        <select
+          class="form-select"
+          id="status"
+          name="status"
+          [(ngModel)]="selectedStatus"
+          [ngClass]="getSelectClass(selectedStatus)"
+          required
+        >
+          <option value="Pending">Pending</option>
+          <option value="Resolved">Resolved</option>
+          <option value="Rejected">Rejected</option>
+          <option value="Accepted">Accepted</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary me-2"
+        (click)="onCancelClick()"
+      >
+        Cancel
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="onSubmit(myForm.value)"
+        [disabled]="myForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</mat-dialog-content>
