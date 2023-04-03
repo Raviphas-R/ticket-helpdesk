@@ -41,7 +41,7 @@ connect your mongoDB to local server to mongodb://localhost:27017 to see data co
 
 Then, Go to http://localhost:4200/ to see application.
 
-## To import Test Data to server
+## To import Test Data to server.
 
 ```
 npm run import_data
