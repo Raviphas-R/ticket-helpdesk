@@ -37,9 +37,9 @@ In Second Terminal in code editer
 npm start
 ```
 
-connect your mongoDB to local server to mongodb://localhost:27017.
+connect your mongoDB to local server to mongodb://localhost:27017 to see data collection.
 
-Then Go to http://localhost:4200/ to see application
+Then, Go to http://localhost:4200/ to see application.
 
 ## To import Test Data to server
 
