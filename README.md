@@ -47,8 +47,24 @@ Then Go to http://localhost:4200/ to see application
 npm run import_data
 ```
 
+# Ticket Dashboard
+
+### Dashboard
+
 ![Web APP Dashboard|150x150](./src/assets/appImage/Dashboard.png)'
+
+### Sorted Data
+
 ![Web APP Dashboard|150x150](./src/assets/appImage/DataSorted.png)'
-![Web APP Dashboard|150x150](./src/assets/appImage/AddticketDialog.png)'
+
+### Filterd Data
+
 ![Web APP Dashboard|150x150](./src/assets/appImage/DataFiltered.png)'
-![Web APP Dashboard|150x150](./src/assets/appImage/DataSorted.png)'
+
+### Create Ticket
+
+![Web APP Dashboard|150x150](./src/assets/appImage/AddticketDialog.png)'
+
+### Edit Ticket Information
+
+![Web APP Dashboard|150x150](./src/assets/appImage/Editticket.png)'
