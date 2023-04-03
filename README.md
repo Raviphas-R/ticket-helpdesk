@@ -1,4 +1,4 @@
-# TicketManagement
+# Ticket Management
 
 MEAN is a set of Open Source components that together, provide an end-to-end framework for building dynamic web applications; starting from the top (code running in the browser) to the bottom (database). The stack is made up of:
 
@@ -23,7 +23,8 @@ npm install
 npm run dev
 ```
 
-###OR
+### OR
+
 In fisrt Terminal in code editer
 
 ```
@@ -45,3 +46,9 @@ Then Go to http://localhost:4200/ to see application
 ```
 npm run import_data
 ```
+
+![Web APP Dashboard|150x150](./src/assets/appImage/Dashboard.png)'
+![Web APP Dashboard|150x150](./src/assets/appImage/DataSorted.png)'
+![Web APP Dashboard|150x150](./src/assets/appImage/AddticketDialog.png)'
+![Web APP Dashboard|150x150](./src/assets/appImage/DataFiltered.png)'
+![Web APP Dashboard|150x150](./src/assets/appImage/DataSorted.png)'
