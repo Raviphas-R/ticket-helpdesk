@@ -47,7 +47,35 @@ Then, Go to http://localhost:4200/ to see application.
 npm run import_data
 ```
 
-# Ticket Dashboard
+## To Test API
+
+this project use Postman - [Download Page](https://www.postman.com/downloads/) to test API.
+
+#### To get all tickets from server.
+
+```
+GET 127.0.0.1:8000/api/tickets
+```
+
+#### To Create new ticket on server.
+
+```
+POST 127.0.0.1:8000/api/:id
+```
+
+#### To get a ticket from server by ID.
+
+```
+GET 127.0.0.1:8000/api/:id
+```
+
+#### To update ticket information to server.
+
+```
+PATCH 127.0.0.1:8000/api/:id
+```
+
+# Ticket Dashboard UI
 
 ### Dashboard
 
