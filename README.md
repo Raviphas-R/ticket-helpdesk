@@ -60,19 +60,19 @@ GET 127.0.0.1:8000/api/tickets
 #### To Create new ticket on server.
 
 ```
-POST 127.0.0.1:8000/api/:id
+POST 127.0.0.1:8000/api/tickets
 ```
 
 #### To get a ticket from server by ID.
 
 ```
-GET 127.0.0.1:8000/api/:id
+GET 127.0.0.1:8000/api/tickets:id
 ```
 
 #### To update ticket information to server.
 
 ```
-PATCH 127.0.0.1:8000/api/:id
+PATCH 127.0.0.1:8000/api/tickets:id
 ```
 
 # Ticket Dashboard UI
