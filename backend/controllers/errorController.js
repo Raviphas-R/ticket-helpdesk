@@ -23,7 +23,9 @@ const sendError = (err, req, res) => {
     if (err.isOperational) {
       return res.status(err.statusCode).json({
         status: err.status,
+        error: err,
         message: err.message,
+        stack: err.stack,
       });
     }
 
@@ -32,18 +34,6 @@ const sendError = (err, req, res) => {
       message: "Something went wrong",
     });
   }
-
-  if (err.isOperational) {
-    return res.status(err.statusCode).render("error", {
-      title: "Something went wrong",
-      msg: err.message,
-    });
-  }
-
-  return res.status(err.statusCode).render("error", {
-    title: "Something went wrong",
-    msg: "Please try again later.",
-  });
 };
 
 module.exports = (err, req, res, next) => {
