@@ -29,11 +29,14 @@ exports.updateTicket = async (Model, id, body) => {
 };
 
 exports.getAlltickets = async (Model, query) => {
-  const doc = new APIFeatures(Model.find(), query)
+  const feature = new APIFeatures(Model.find(), query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
-
-  return doc.query;
+  const doc = await feature.query;
+  if (doc.length === 0) {
+    throw new AppError("Please check your URL query is correct?", 404);
+  }
+  return doc;
 };
