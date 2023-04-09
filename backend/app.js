@@ -43,18 +43,7 @@ app.use(mongoSanitize());
 app.use(xss());
 
 // Prevent parameter pollution
-app.use(
-  hpp({
-    whitelist: [
-      "duration",
-      "ratingsQuantity",
-      "ratingsAverage",
-      "maxGroupSize",
-      "difficulty",
-      "price",
-    ], // whitelist use for specify the query string that can duplicate.
-  })
-);
+app.use(hpp());
 
 // ROUTES
 app.use("/api/tickets", ticketRouter);
